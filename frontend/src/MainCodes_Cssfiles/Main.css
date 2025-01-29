@@ -1,0 +1,108 @@
+.box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text inside the div */
+  }
+  
+  .title-main {
+    font-size: 36px;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px white;
+  }
+  .logo-img-main {
+    margin-top: 50px;
+    height: 200px; /* Set the logo height (adjust to fit your design) */
+    width: auto;  /* Maintain aspect ratio */
+}
+.LogoText {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  text-shadow: 0 0 5px rgb(15, 10, 10);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+  .grow-business {
+    font-size: 18px;
+    text-align: center;
+    color: #ddd;
+    max-width: 800px;
+  }
+  
+  /* Parent container for buttons */
+  .btn {
+    display: flex; /* Ensures the buttons align properly */
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 20px; /* Add space between buttons */
+    align-items: center; /* Center align buttons */
+  }
+  
+  /* Buttons */
+  .LogIn-Btn button,
+.SignUp-Btn button {
+  width: 150px; /* Set a fixed width for all buttons */
+  height: 50px; /* Set a fixed height for all buttons */
+  font-size: 16px; /* Font size for button text */
+  border-radius: 20px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add pointer cursor on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Light overlay on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  border-radius: 40px;
+  box-shadow: 0px 4px 25px 0px rgba(1, 185, 243, 0.30);
+  color: #000000;
+}
+
+/* Specific Style for Login Button */
+.LogIn-Btn button {
+  background: #01B9F3; /* Green color for the login button */
+}
+
+/* Specific Style for Sign-Up Button */
+.SignUp-Btn button {
+  background: #64FE1B; /* Blue color for the sign-up button */
+}
+  button:hover{
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay on hover */
+    color: #5d00ff; /* Optional: Add a unique hover color */
+    box-shadow: 0 0 10px #001eff; /* Glowing effect */
+  }
+  
+  /* Mobile Screens */
+  @media (max-width: 480px) {
+    .title-main {
+      font-size: 24px; /* Further reduce title size */
+      margin-left: 20px;
+    }
+  
+    .grow-business {
+      font-size: 14px;
+      max-width: 100%; /* Allow full width */
+      padding: 0 10px; /* Add some padding for readability */
+    }
+  
+    .LogIn-Btn button
+    .SignUp-Btn button {
+      width: 100%; /* Buttons take full width on mobile */
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .btn {
+      gap: 10px; /* Smaller gap between buttons */
+    }
+  }

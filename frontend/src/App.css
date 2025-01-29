@@ -1,0 +1,19 @@
+*{
+  padding:0;
+  box-sizing: border-box;
+  
+}
+.App {
+  width: auto;
+  height: auto;/* Makes the container take the full viewport height */
+  background: url('./Image/body-background\ 2.png') black  0px -396.984px / 100% 213.333% no-repeat; /* Ensures the image covers the entire container */
+  filter: brightness(90%); /* Darkens the image */
+}
+@media (max-width: 768px) {
+  .App {
+      height: auto; /* Allow the container height to adjust to content */
+      background-position: center; /* Adjust the image position for smaller screens */
+      filter: brightness(50%); /* Make the background darker for better readability */
+  }
+}
+

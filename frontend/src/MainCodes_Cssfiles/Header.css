@@ -1,0 +1,128 @@
+.container{
+    background-color: #0a0a3f;
+    opacity:0.8;
+    filter: drop-shadow(0px 4px 4px #266dd8);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 0 0 0;
+}
+.nav{
+    display: flex;
+    justify-content: center; /* Centers the navigation links */
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 10px; /* Adds space between links */
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Removes underline */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Adds rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay on hover */
+    color: #5d00ff; /* Optional: Add a unique hover color */
+    box-shadow: 0 0 10px #001eff; /* Glowing effect */
+  }
+  
+  .nav-links a:focus {
+    background-color: #35228b; /* Highlight current/active item */
+    color: white;
+  }
+  
+  .icons{
+    display: flex;
+    gap: 12px; /* Adds space between links */
+        
+    }
+  
+    .LogoText {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .logo-img {
+        height: 80px; /* Set the logo height (adjust to fit your design) */
+        width: auto;  /* Maintain aspect ratio */
+        margin-left:10px ;
+    }
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack logo, nav, and icons */
+      align-items: center;
+      padding: 20px;
+  }
+
+  .nav {
+      justify-content: center;
+  }
+
+  .nav-links {
+      flex-direction: column; /* Stack nav links vertically */
+      gap: 15px;
+      align-items: center; /* Center links */
+  }
+
+  .nav-links a {
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .icons {
+      margin-top: 10px;
+  }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(228, 195, 195);
+    color: black;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.icon-button {
+    
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .LogoText {
+      font-size: 20px; /* Adjust logo size for mobile */
+  }
+
+  .nav-links a {
+      font-size: 14px;
+      padding: 8px 12px; /* Reduce padding for smaller buttons */
+  }
+
+ 
+}

@@ -1,0 +1,143 @@
+.container1 {
+    height: 100vh;
+    margin-top: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.business-management-container {
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 15px;
+    width: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar-container input {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.business-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-header1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr;
+    
+    padding: 10px;
+    text-align: left;
+}
+
+.col {
+    padding: 8px;
+    text-align: left;
+}
+
+.business-name, .business-location, .business-status, .business-actions {
+    font-size: 14px;
+}
+
+.table-row1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    align-items: center;
+}
+
+.table-row:hover {
+    background-color: #f9f9f95b;
+  
+}
+
+.business-status.suspended {
+    color: red;
+    font-weight: bold;
+}
+
+.business-status.Activated {
+    color: green;
+    font-weight: bold;
+}
+
+.action-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+.action-btn.delete {
+    background-color: #dc3545;
+}
+
+.action-btn.delete:hover {
+    background-color: #c82333;
+}
+
+.action-btn.view-details {
+    background-color: #28a745;
+}
+
+.action-btn.view-details:hover {
+    background-color: #218838;
+}
+
+.action-btn.more {
+    background-color: #ffc107;
+}
+
+.action-btn.more:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+    .table-header {
+        display: block;
+        text-align: center;
+    }
+
+    .table-row {
+        display: block;
+        text-align: center;
+    }
+
+    .col {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .business-table {
+        margin-top: 10px;
+    }
+}

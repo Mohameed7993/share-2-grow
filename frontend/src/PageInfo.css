@@ -1,0 +1,34 @@
+.page-info-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .person-icon img {
+    width: 200px; /* Adjust icon size */
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .speech-bubble {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    max-width: 80%;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 10%;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #f1f1f1 transparent;
+  }
+  

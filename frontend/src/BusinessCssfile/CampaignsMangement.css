@@ -1,0 +1,59 @@
+.container2 {
+    height: 100vh;
+    margin-top: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.campaign-management-container {
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 15px;
+    width: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filter-container,
+.search-bar-container {
+    margin-bottom: 20px;
+}
+.filter-container{
+    font-weight: bold;
+    
+}
+
+.table-header,
+.table-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #333;
+}
+
+.col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.campaign-actions button {
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.campaign-actions .delete {
+    color: red;
+    background-color: #ddd;
+}
+
+.campaign-actions .more {
+    color: blue;
+    background-color: #ddd;
+}

@@ -1,0 +1,84 @@
+/* MasterStatistics.css */
+
+/* Container Styling */
+.container_mas {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Page Title */
+  .container_mas h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Page Description */
+  .container_mas p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Buttons Row */
+  .d-flex1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Buttons Styling */
+  button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button.btn-primary1 {
+    background-color: #3b82f6;
+    color: #fff;
+  }
+  
+  button.btn-primary1:hover {
+    background-color: #2563eb;
+  }
+  
+  button.btn-success {
+    background-color: #10b981;
+    color: #fff;
+  }
+  
+  button.btn-success:hover {
+    background-color: #059669;
+  }
+  
+  button.btn-warning {
+    background-color: #f59e0b;
+    color: #fff;
+  }
+  
+  button.btn-warning:hover {
+    background-color: #d97706;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .d-flex {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

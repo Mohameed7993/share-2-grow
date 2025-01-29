@@ -1,0 +1,154 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page container */
+.Box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content-box {
+    position: relative;
+    border-radius: 209px;
+    width: 90%;
+    max-width: 967px;
+    height: auto;
+    padding: 40px 20px;
+    background: rgba(217, 217, 217, 0.2);
+    text-align: center;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+h2 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px #01B9F3;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 1; /* Full opacity */
+}
+
+input {
+    width: 80%;
+    max-width: 325px;
+    height: 43px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #FFF;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:hover,
+input:focus {
+    box-shadow: 0px 4px 20px rgba(1, 185, 243, 0.5);
+    transform: scale(1.02);
+}
+
+.loginbutton {
+    width: 80%;
+    max-width: 150px;
+    height: 49px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1a1a72;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(26, 26, 114, 0.5);
+}
+
+.loginbutton:hover {
+    background-color: #000080;
+    box-shadow: 0px 6px 20px rgba(0, 0, 128, 0.7);
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-box {
+        padding: 20px; /* Reduce padding for smaller screens */
+        border-radius: 30px; /* Adjust corner radius */
+    }
+
+    h2 {
+        font-size: 28px; /* Reduce header font size */
+    }
+
+    input,
+    .loginbutton {
+        width: 90%;
+    }
+}
+/* General styling for the alert box */
+.alert {
+    position: fixed;
+    left: 10px; /* Align to the left */
+    top: 10px; /* Add margin from top */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    z-index: 1000;
+}
+
+/* Success alert style (green background) */
+.alert.success {
+    background-color: green;
+}
+
+/* Error alert style (red background) */
+.alert.error {
+    background-color: red;
+}
+
+/* Additional styling for error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px; /* Further reduce header size */
+    }
+
+    input {
+        height: 40px; /* Adjust input height */
+        font-size: 14px;
+    }
+
+    .loginbutton {
+        height: 40px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,83 @@
+/* Overlay */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .custom-modal-content {
+    background-image: url('./Image/BalanceCard.png'); /* Replace with the actual image path */
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  /* Modal Header */
+  .custom-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    color: #ddd;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
+  }
+  
+  /* Modal Body */
+  .custom-modal-body {
+    margin: 20px 0;
+    color: #ddd;
+  }
+  
+  /* Modal Footer */
+  .custom-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Footer Close Button */
+  .btn-close {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn-close:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

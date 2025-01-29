@@ -1,0 +1,246 @@
+.campaigns-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .campaigns-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .campaign-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .campaign-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .campaign-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .campaign-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .campaign-info {
+    padding: 15px;
+  }
+  
+  .campaign-details {
+    margin-top: 10px;
+  }
+  
+  .share-info p {
+    margin: 5px 0;
+  }
+  
+  .campaign-slider {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .campaigns-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .campaigns-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .campaign-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campaign-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .campaign-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .campaign-info {
+    padding: 15px;
+  }
+  
+  .campaign-details {
+    margin-top: 10px;
+  }
+  
+  .share-info p {
+    margin: 5px 0;
+  }
+  
+  .join-button-container {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .join-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .join-button span {
+    margin-right: 5px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .campaign-card {
+    width: 100%;
+    max-width: 300px;
+    max-height: 380px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .campaign-info {
+    padding: 15px;
+  }
+  
+  .campaign-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .campaign-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hover-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: none;
+    padding: 20px;
+    z-index: 10;
+  }
+  
+  .campaign-card:hover .hover-info {
+    display: block;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  

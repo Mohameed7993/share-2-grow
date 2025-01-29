@@ -1,0 +1,225 @@
+/* Container styling */
+.user-management-container {
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 15px;
+    width: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.container1{
+    height: 100vh;
+    margin-top: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-header {
+    display: flex;
+    background-color: #1a1a72;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    justify-content: space-between; /* Ensure even spacing of columns */
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-between; /* Align items in each row evenly */
+}
+
+.table-row:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+/* Adjusting specific column flex properties */
+.user-icon-header {
+    flex: 0.5;
+}
+
+.actions-header {
+    flex: 1.5;
+}
+
+.user-name {
+    flex: 2;
+}
+
+.user-status {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.user-status.Activated {
+    color: green;
+}
+
+.user-status.suspended {
+    color: red;
+}
+
+.user-businesses, .user-join-date {
+    flex: 1.5;
+}
+
+.user-actions {
+    flex: 2;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Action button styling */
+.action-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.action-btn.delete:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.action-btn.suspend:hover {
+    color: orange;
+    transform: scale(1.2);
+}
+
+.action-btn.more:hover {
+    color: #1a1a72;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .table-header, .table-row {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 100%;
+        justify-content: flex-start;
+        padding: 5px 0;
+    }
+
+    .user-actions {
+        gap: 5px;
+    }
+
+}
+
+.search-bar-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sort-options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sort-options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1a1a72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.sort-options button:hover {
+    background-color: #333;
+}
+/* Action button styling */
+.action-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.action-btn.delete:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.action-btn.suspend:hover {
+    color: orange;
+    transform: scale(1.2);
+}
+
+.action-btn.more:hover {
+    color: #1a1a72;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .table-header, .table-row {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 100%;
+        justify-content: flex-start;
+        padding: 5px 0;
+    }
+
+    .user-actions {
+        gap: 5px;
+    }
+}

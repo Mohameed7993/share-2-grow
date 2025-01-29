@@ -1,0 +1,150 @@
+/* General Styles */
+.wallet-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('../Image/cardimage.png'); /* Replace with the actual image path */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wallet-container h1 {
+    text-align: center;
+    color:white;
+  }
+  
+  .wallet-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .wallets {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .wallet {
+    width: 250px;
+    height: 150px;
+    background-image: url('../Image/BalanceCard.png'); /* Replace with the actual image path */
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .wallet:hover {
+    transform: scale(1.05);
+  }
+  
+  .wallet h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #555;
+    padding: 5px 0;
+    width: 100%;
+  }
+  
+  .wallet-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .wallet-item {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cash-wallet:hover .wallet-content {
+    display: block;
+    background-color: #d4edda;
+  }
+  
+  .discount-wallet:hover .wallet-content {
+    display: block;
+    background-color: #f8d7da;
+  }
+  .wallets {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .wallet {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .wallet:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cash-wallet {
+    background-color: #e6f7ff;
+  }
+  
+  .discount-wallet {
+    background-color: #fff5e6;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close-modal {
+    float: right;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .credits-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 20px;
+  }
+  
+  .credit-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
